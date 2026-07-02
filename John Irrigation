@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>John Irrigation Repair — Riverview, FL</title>
+<meta name="description" content="Licensed irrigation repair in Riverview, FL. Same-day sprinkler repair, leak detection, valve and controller service. 5.0 stars across 42 reviews.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%A7%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F2F6F4;
+    --paper-deep:#E4EDE8;
+    --ink:#12312D;
+    --ink-soft:#4A6560;
+    --teal:#1B6E6E;
+    --teal-deep:#0E4A4A;
+    --teal-pale:#D9EAE8;
+    --lawn:#4C7A3D;
+    --lawn-pale:#E4EEDD;
+    --brass:#C17817;
+    --brass-deep:#9C5C10;
+    --brass-light:#E8B34D;
+    --clay:#B84B2B;
+    --clay-pale:#F3DED4;
+    --white:#FBFDFC;
+    --font-display:'Big Shoulders Display', sans-serif;
+    --font-body:'Inter', sans-serif;
+    --font-mono:'IBM Plex Mono', monospace;
+    --maxw:1120px;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--font-body);
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{display:block;max-width:100%;}
+  a{color:inherit;}
+  :focus-visible{outline:3px solid var(--brass-light);outline-offset:3px;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding-inline:24px;}
+  .eyebrow{
+    font-family:var(--font-mono);
+    font-size:0.72rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--teal);
+    font-weight:500;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:8px;height:8px;border-radius:50%;
+    background:var(--lawn);
+    display:inline-block;
+  }
+  h1,h2,h3{
+    font-family:var(--font-display);
+    font-weight:700;
+    letter-spacing:-0.01em;
+    line-height:1.05;
+  }
+  .btn{
+    font-family:var(--font-body);
+    font-weight:600;
+    font-size:0.95rem;
+    border-radius:8px;
+    padding:14px 24px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    border:2px solid transparent;
+    cursor:pointer;
+    text-decoration:none;
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+  }
+  .btn:active{transform:translateY(2px);}
+  .btn-brass{
+    background:var(--brass-deep);
+    color:var(--white);
+  }
+  .btn-brass:hover{background:var(--brass);box-shadow:0 6px 18px rgba(156,92,16,0.35);}
+  .btn-outline{
+    background:transparent;
+    border-color:rgba(251,253,252,0.55);
+    color:var(--white);
+  }
+  .btn-outline:hover{border-color:var(--white);background:rgba(251,253,252,0.08);}
+  .btn-outline-ink{
+    background:transparent;
+    border-color:var(--teal-deep);
+    color:var(--teal-deep);
+  }
+  .btn-outline-ink:hover{background:var(--teal-pale);}
+  .btn:disabled{opacity:0.6;cursor:progress;}
+
+  /* device panel motif: screws at corners, like real equipment */
+  .device-panel{position:relative;}
+  .screw{
+    position:absolute;width:9px;height:9px;border-radius:50%;
+    background:rgba(251,253,252,0.35);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,0.4);
+  }
+  .screw.tl{top:14px;left:14px;} .screw.tr{top:14px;right:14px;}
+  .screw.bl{bottom:14px;left:14px;} .screw.br{bottom:14px;right:14px;}
+
+  /* NAV */
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(242,246,244,0.9);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--paper-deep);
+  }
+  .nav-inner{
+    max-width:var(--maxw);margin:0 auto;padding:14px 24px;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+  }
+  .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);}
+  .logo-mark{width:30px;height:30px;flex:none;}
+  .logo-text{font-family:var(--font-display);font-weight:800;font-size:1.15rem;letter-spacing:-0.01em;line-height:1;}
+  .logo-text span{color:var(--brass-deep);}
+  .nav-links{display:flex;gap:28px;font-size:0.92rem;font-weight:500;}
+  .nav-links a{text-decoration:none;color:var(--ink-soft);transition:color .15s;}
+  .nav-links a:hover{color:var(--teal-deep);}
+  @media (max-width:800px){.nav-links{display:none;}}
+
+  /* HERO */
+  .hero-section{padding:28px 24px 0;}
+  .hero{
+    max-width:var(--maxw);margin:0 auto;
+    background:linear-gradient(155deg, var(--teal-deep), #0A3838 80%);
+    border-radius:20px;
+    color:var(--white);
+    padding:clamp(40px,7vw,76px) clamp(24px,6vw,64px);
+    overflow:hidden;
+  }
+  .lcd{
+    font-family:var(--font-mono);
+    font-size:0.78rem;
+    letter-spacing:0.1em;
+    color:var(--brass-light);
+    background:rgba(0,0,0,0.22);
+    border:1px solid rgba(232,179,77,0.3);
+    display:inline-block;
+    padding:7px 14px;
+    border-radius:6px;
+    margin-bottom:22px;
+  }
+  .rating-row{
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    margin-bottom:18px;color:rgba(251,253,252,0.85);font-size:0.95rem;
+  }
+  .stars{color:var(--brass-light);letter-spacing:2px;font-size:1rem;}
+  .hero h1{font-size:clamp(2.3rem,5vw,4rem);max-width:16ch;margin-bottom:20px;}
+  .hero p.lede{
+    max-width:52ch;color:rgba(251,253,252,0.82);font-size:1.08rem;margin-bottom:32px;
+  }
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+
+  /* SECTIONS shared */
+  section{padding:clamp(56px,9vw,96px) 24px;}
+  .section-inner{max-width:var(--maxw);margin:0 auto;}
+  .section-head{max-width:60ch;margin-bottom:44px;}
+  .section-head h2{font-size:clamp(1.9rem,3.4vw,2.7rem);margin-top:10px;margin-bottom:14px;}
+  .section-head p{color:var(--ink-soft);font-size:1.05rem;}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease;}
+  .reveal.in-view{opacity:1;transform:translateY(0);}
+
+  /* DIAGNOSTIC */
+  .diagnostic-section{background:var(--white);}
+  .diag-panel{
+    background:var(--paper);
+    border:1px solid var(--paper-deep);
+    border-radius:18px;
+    padding:clamp(20px,4vw,40px);
+  }
+  .diag-top{
+    display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+    margin-bottom:28px;
+  }
+  .diag-svg-wrap{position:relative;margin-bottom:8px;}
+  .diagnostic-svg{width:100%;height:auto;}
+  .pipe-line{stroke:var(--paper-deep);stroke-width:4;stroke-linecap:round;}
+  .node-circle{
+    fill:var(--paper);
+    stroke:var(--teal-deep);
+    stroke-width:3;
+    transition:fill .3s, stroke .3s;
+  }
+  .node-label{
+    font-family:var(--font-mono);
+    font-size:12px;
+    font-weight:600;
+    fill:var(--teal-deep);
+    text-anchor:middle;
+    letter-spacing:0.04em;
+    transition:fill .3s;
+  }
+  .node.active .node-circle{fill:var(--clay-pale);stroke:var(--clay);}
+  .node.active .node-label{fill:var(--clay);}
+  .node.active{animation:pulse 1s ease;}
+  @keyframes pulse{
+    0%{transform:scale(1);} 30%{transform:scale(1.12);} 100%{transform:scale(1);}
+  }
+  .scan-beam{
+    position:absolute;left:0;top:6%;height:88%;width:5px;
+    background:linear-gradient(var(--teal), var(--lawn));
+    box-shadow:0 0 22px var(--teal);
+    border-radius:3px;
+    opacity:0;
+    transform:translateX(0);
+    transition:transform 1.4s cubic-bezier(.65,0,.35,1), opacity .2s;
+  }
+  .scan-beam.active{opacity:1;transform:translateX(calc(100% - 5px));}
+  .diag-svg-wrap{overflow:hidden;border-radius:10px;}
+  .diag-bottom{display:flex;justify-content:center;margin:20px 0 28px;}
+  .diag-result{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    background:var(--teal-pale);
+    border-radius:14px;
+    padding:24px;
+    opacity:0;max-height:0;overflow:hidden;
+    transition:opacity .4s ease;
+  }
+  .diag-result.show{opacity:1;max-height:600px;padding:24px;}
+  .diag-field label{
+    display:block;font-family:var(--font-mono);font-size:0.68rem;letter-spacing:0.1em;
+    text-transform:uppercase;color:var(--teal-deep);margin-bottom:6px;
+  }
+  .diag-field p{font-size:0.95rem;color:var(--ink);}
+  .diag-field.title p{font-family:var(--font-display);font-weight:700;font-size:1.3rem;line-height:1.15;}
+  .diag-time{color:var(--lawn);font-weight:600;}
+
+  /* ZONES */
+  .zones-section{background:var(--paper-deep);}
+  .zones-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+  .zone-card{
+    background:var(--white);
+    border-radius:14px;
+    padding:26px;
+    border:1px solid rgba(18,49,45,0.08);
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .zone-card:hover, .zone-card:focus-within{
+    transform:translateY(-4px);
+    box-shadow:0 14px 30px rgba(18,49,45,0.1);
+  }
+  .zone-top{display:flex;align-items:center;gap:14px;margin-bottom:12px;}
+  .zone-num{
+    font-family:var(--font-mono);font-weight:600;font-size:0.85rem;
+    color:var(--white);background:var(--teal);
+    width:34px;height:34px;border-radius:8px;
+    display:flex;align-items:center;justify-content:center;flex:none;
+  }
+  .zone-icon{width:22px;height:22px;color:var(--brass-deep);transition:transform .5s ease;}
+  .zone-card:hover .zone-icon, .zone-card:focus-within .zone-icon{transform:rotate(18deg) scale(1.1);}
+  .zone-card h3{font-size:1.15rem;font-weight:700;margin-bottom:8px;font-family:var(--font-body);letter-spacing:0;}
+  .zone-card p{color:var(--ink-soft);font-size:0.95rem;}
+
+  /* WHY */
+  .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
+  .stat-card{
+    background:var(--white);border-radius:14px;padding:28px;
+    border:1px solid rgba(18,49,45,0.08);
+  }
+  .stat-card .num{font-family:var(--font-display);font-size:2.6rem;font-weight:800;color:var(--teal-deep);line-height:1;margin-bottom:10px;}
+  .stat-card .label{color:var(--ink-soft);font-size:0.92rem;}
+
+  /* TESTIMONIALS */
+  .testimonials-section{background:var(--teal-deep);color:var(--white);}
+  .testimonials-section .section-head p{color:rgba(251,253,252,0.75);}
+  .testimonials-section .eyebrow{color:var(--brass-light);}
+  .testimonials-section .eyebrow::before{background:var(--brass-light);}
+  .t-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+  .t-card{
+    background:rgba(251,253,252,0.06);
+    border:1px solid rgba(251,253,252,0.14);
+    border-radius:14px;padding:24px;
+  }
+  .t-card p.quote{font-size:0.98rem;margin-bottom:16px;color:rgba(251,253,252,0.92);}
+  .t-card .who{font-family:var(--font-mono);font-size:0.74rem;letter-spacing:0.05em;color:var(--brass-light);}
+
+  /* INFO / CONTACT */
+  .info-section{background:var(--paper);}
+  .info-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:40px;}
+  @media (max-width:820px){.info-grid{grid-template-columns:1fr;}}
+  .info-panel{
+    background:var(--teal-deep);color:var(--white);
+    border-radius:18px;padding:clamp(28px,4vw,40px);
+  }
+  .info-panel h3{font-size:1.5rem;margin-bottom:18px;}
+  .hours-table{width:100%;border-collapse:collapse;font-size:0.95rem;margin-bottom:16px;}
+  .hours-table td{padding:7px 0;border-bottom:1px solid rgba(251,253,252,0.12);}
+  .hours-table td:first-child{color:rgba(251,253,252,0.7);font-family:var(--font-mono);font-size:0.82rem;}
+  .hours-table td:last-child{text-align:right;font-weight:600;}
+  .hours-note{font-size:0.82rem;color:rgba(251,253,252,0.6);}
+  .contact-panel{display:flex;flex-direction:column;gap:20px;}
+  .contact-block{background:var(--white);border:1px solid rgba(18,49,45,0.08);border-radius:14px;padding:24px;}
+  .contact-block .label{font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--teal);margin-bottom:8px;}
+  .contact-block .value{font-size:1.1rem;font-weight:600;margin-bottom:4px;}
+  .badges{display:flex;flex-wrap:wrap;gap:10px;}
+  .badge{
+    font-family:var(--font-mono);font-size:0.76rem;
+    background:var(--lawn-pale);color:var(--lawn);
+    padding:8px 12px;border-radius:20px;border:1px solid rgba(76,122,61,0.25);
+  }
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px;}
+
+  footer{
+    background:var(--ink);color:rgba(251,253,252,0.65);
+    padding:32px 24px;font-size:0.85rem;
+  }
+  .footer-inner{max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;}
+  .footer-inner a{color:var(--brass-light);text-decoration:none;}
+
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{
+      animation-duration:0.001ms !important;
+      animation-iteration-count:1 !important;
+      transition-duration:0.001ms !important;
+      scroll-behavior:auto !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">
+      <svg class="logo-mark" viewBox="0 0 30 30" aria-hidden="true">
+        <path d="M15 3 C15 3 6 14 6 20 A9 9 0 0 0 24 20 C24 14 15 3 15 3 Z" fill="none" stroke="#1B6E6E" stroke-width="2.4" stroke-linejoin="round"/>
+      </svg>
+      <span class="logo-text"><span>John's</span> Irrigation Repair</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#diagnostic">Diagnostic</a>
+      <a href="#zones">Services</a>
+      <a href="#why">Why John</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="tel:+17737170821" class="btn btn-brass" style="padding:10px 18px;">Call (773) 717-0821</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="hero-section">
+    <div class="hero device-panel">
+      <span class="screw tl"></span><span class="screw tr"></span><span class="screw bl"></span><span class="screw br"></span>
+      <div class="lcd">SYSTEM STATUS: ONLINE — RIVERVIEW, FL</div>
+      <div class="rating-row">
+        <span class="stars">★★★★★</span>
+        <span>5.0 out of 5 · 42 Google reviews</span>
+      </div>
+      <h1>Somewhere under your lawn, a pipe is leaking. John usually finds it in under five minutes.</h1>
+      <p class="lede">Fair pricing, straight answers, and repairs that hold. Riverview homeowners tend to call John once and keep calling him every season after.</p>
+      <div class="hero-ctas">
+        <a href="tel:+17737170821" class="btn btn-brass">Call (773) 717-0821</a>
+        <a href="#diagnostic" class="btn btn-outline">See how a diagnosis works ↓</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="diagnostic" class="diagnostic-section">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="eyebrow">How a service call goes</span>
+        <h2>Run the same scan John runs on a broken system.</h2>
+        <p>Every irrigation problem leaves a clue — low pressure, a wet spot, a zone that won't shut off. Tap the button to step through five real Riverview calls, from first symptom to fix.</p>
+      </div>
+
+      <div class="diag-panel device-panel reveal">
+        <span class="screw tl"></span><span class="screw tr"></span><span class="screw bl"></span><span class="screw br"></span>
+        <div class="diag-top">
+          <span class="eyebrow" style="color:var(--brass-deep);">Zone schematic</span>
+          <span style="font-family:var(--font-mono);font-size:0.8rem;color:var(--ink-soft);">CONTROLLER → MAINLINE → VALVE → HEAD → BODY</span>
+        </div>
+
+        <div class="diag-svg-wrap">
+          <div class="scan-beam" id="scanBeam"></div>
+          <svg class="diagnostic-svg" viewBox="0 0 960 160" aria-hidden="true">
+            <line x1="40" y1="80" x2="900" y2="80" class="pipe-line"/>
+            <g class="node" data-i="0" transform="translate(110,80)">
+              <circle r="34" class="node-circle"/>
+              <text class="node-label" y="6">CTRL</text>
+            </g>
+            <g class="node" data-i="1" transform="translate(300,80)">
+              <circle r="34" class="node-circle"/>
+              <text class="node-label" y="6">MAIN</text>
+            </g>
+            <g class="node" data-i="2" transform="translate(490,80)">
+              <circle r="34" class="node-circle"/>
+              <text class="node-label" y="6">VALVE</text>
+            </g>
+            <g class="node" data-i="3" transform="translate(680,80)">
+              <circle r="34" class="node-circle"/>
+              <text class="node-label" y="6">HEAD</text>
+            </g>
+            <g class="node" data-i="4" transform="translate(870,80)">
+              <circle r="32" class="node-circle"/>
+              <text class="node-label" y="6" font-size="11">ROOT</text>
+            </g>
+          </svg>
+        </div>
+
+        <div class="diag-bottom">
+          <button class="btn btn-brass" id="diagBtn">Run 60-second diagnostic</button>
+        </div>
+
+        <div class="diag-result" id="diagResult">
+          <div class="diag-field title" style="grid-column:1/-1;">
+            <label>Diagnosis</label>
+            <p class="diag-title"></p>
+          </div>
+          <div class="diag-field">
+            <label>What was actually wrong</label>
+            <p class="diag-detail"></p>
+          </div>
+          <div class="diag-field">
+            <label>The fix</label>
+            <p class="diag-fix"></p>
+          </div>
+          <div class="diag-field">
+            <label>Outcome</label>
+            <p class="diag-time"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="zones" class="zones-section">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="eyebrow">Select a zone</span>
+        <h2>Six things John gets called for</h2>
+        <p>Numbered the way your controller already numbers its zones — pick the one that matches what's going on.</p>
+      </div>
+      <div class="zones-grid">
+
+        <div class="zone-card reveal">
+          <div class="zone-top">
+            <span class="zone-num">01</span>
+            <svg class="zone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+          </div>
+          <h3>Leak Detection &amp; Diagnosis</h3>
+          <p>Find what's actually wrong before anything gets replaced — including breaks that never surface as a puddle.</p>
+        </div>
+
+        <div class="zone-card reveal">
+          <div class="zone-top">
+            <span class="zone-num">02</span>
+            <svg class="zone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6z"/></svg>
+          </div>
+          <h3>Valve &amp; Sprinkler Head Repair</h3>
+          <p>Stuck valves, cracked bodies, and heads that stopped spraying — fixed on the spot, same visit.</p>
+        </div>
+
+        <div class="zone-card reveal">
+          <div class="zone-top">
+            <span class="zone-num">03</span>
+            <svg class="zone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="12" rx="2"/><path d="M8 21h8M9 9h6M9 12h4"/></svg>
+          </div>
+          <h3>Controller Install &amp; Programming</h3>
+          <p>A new timer, corrected wiring, or a watering schedule that finally matches your yard.</p>
+        </div>
+
+        <div class="zone-card reveal">
+          <div class="zone-top">
+            <span class="zone-num">04</span>
+            <svg class="zone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12a8 8 0 0 1 14-5"/><path d="M20 12a8 8 0 0 1-14 5"/><path d="M18 3v4h-4M6 21v-4h4"/></svg>
+          </div>
+          <h3>Seasonal Tune-Ups</h3>
+          <p>Purge the lines, rebalance every head, and adjust coverage before the season turns.</p>
+        </div>
+
+        <div class="zone-card reveal">
+          <div class="zone-top">
+            <span class="zone-num">05</span>
+            <svg class="zone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+          </div>
+          <h3>New System Design &amp; Install</h3>
+          <p>Water-efficient coverage planned for your actual yard, not a generic template layout.</p>
+        </div>
+
+        <div class="zone-card reveal">
+          <div class="zone-top">
+            <span class="zone-num">06</span>
+            <svg class="zone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c3 3 5 5.5 5 9a5 5 0 0 1-10 0c0-3.5 2-6 5-9z"/></svg>
+          </div>
+          <h3>Lawn Fertilization Add-On</h3>
+          <p>Feed the lawn while the system's already dialed in and every zone is running true.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="eyebrow">Why homeowners keep calling back</span>
+        <h2>The numbers behind the reviews</h2>
+      </div>
+      <div class="why-grid">
+        <div class="stat-card reveal">
+          <div class="num">5.0★</div>
+          <div class="label">Average rating across 42 Google reviews</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="num">Same day</div>
+          <div class="label">Typical response time for most service calls</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="num">$0</div>
+          <div class="label">Diagnostic or trip fee — you pay for the fix, not the visit</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="num">1 visit</div>
+          <div class="label">Most repairs are finished the day John arrives</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="testimonials-section">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="eyebrow">From Google reviews</span>
+        <h2>What Riverview homeowners say</h2>
+        <p>A sample of the 42 reviews behind that 5.0 rating.</p>
+      </div>
+      <div class="t-grid">
+
+        <div class="t-card reveal">
+          <p class="quote">Explained every issue in plain terms before starting, then finished a full day of repairs in a single visit.</p>
+          <div class="who">MARIA LEYVA · GOOGLE REVIEW · 8 MONTHS AGO</div>
+        </div>
+
+        <div class="t-card reveal">
+          <p class="quote">Called same-day and paid nothing extra just to get a diagnosis — a rarity among sprinkler companies.</p>
+          <div class="who">CHRIS S. · GOOGLE REVIEW · 5 MONTHS AGO</div>
+        </div>
+
+        <div class="t-card reveal">
+          <p class="quote">After three other companies missed it, John was the one who found the actual buried break in the line.</p>
+          <div class="who">DANIELLE C. · LOCAL GUIDE · 5 MONTHS AGO</div>
+        </div>
+
+        <div class="t-card reveal">
+          <p class="quote">Responded right away, priced it fairly, and now every inch of the yard gets even coverage.</p>
+          <div class="who">DONNA PHILLIPS · GOOGLE REVIEW · A YEAR AGO</div>
+        </div>
+
+        <div class="t-card reveal">
+          <p class="quote">Designed a water-efficient layout that dropped the water bill while the plants kept thriving.</p>
+          <div class="who">ENNY COLLADO · LOCAL GUIDE · 2 YEARS AGO</div>
+        </div>
+
+        <div class="t-card reveal">
+          <p class="quote">Traced a wiring issue by isolating each valve until the real problem showed itself — no pushed upgrades.</p>
+          <div class="who">JEFF FITT · GOOGLE REVIEW · 2 YEARS AGO</div>
+        </div>
+
+        <div class="t-card reveal">
+          <p class="quote">Responsive, honest, and competitively priced for both irrigation repair and lawn fertilization.</p>
+          <div class="who">VANESSA RODRIGUEZ · GOOGLE REVIEW · 3 MONTHS AGO</div>
+        </div>
+
+        <div class="t-card reveal">
+          <p class="quote">Diagnosed a bad valve and a faulty controller on the spot, at a bill described as more than reasonable.</p>
+          <div class="who">TROY ABELL · GOOGLE REVIEW · 6 MONTHS AGO</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="info-section">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="eyebrow">Get on the schedule</span>
+        <h2>Call, or stop by during business hours</h2>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-panel device-panel reveal">
+          <span class="screw tl"></span><span class="screw tr"></span><span class="screw bl"></span><span class="screw br"></span>
+          <h3>Hours</h3>
+          <table class="hours-table">
+            <tr><td>MON</td><td>8:00 AM – 5:30 PM</td></tr>
+            <tr><td>TUE</td><td>8:00 AM – 5:30 PM</td></tr>
+            <tr><td>WED</td><td>8:00 AM – 5:30 PM</td></tr>
+            <tr><td>THU</td><td>8:00 AM – 5:30 PM</td></tr>
+            <tr><td>FRI</td><td>8:00 AM – 5:30 PM</td></tr>
+            <tr><td>SAT</td><td>8:00 AM – 4:00 PM</td></tr>
+            <tr><td>SUN</td><td>Closed</td></tr>
+          </table>
+          <p class="hours-note">Hours may shift around the July 3–4 holiday weekend — call to confirm.</p>
+        </div>
+
+        <div class="contact-panel reveal">
+          <div class="contact-block">
+            <div class="label">Phone</div>
+            <div class="value"><a href="tel:+17737170821">(773) 717-0821</a></div>
+          </div>
+          <div class="contact-block">
+            <div class="label">Address</div>
+            <div class="value" style="font-size:1rem;">14103 Covert Green Pl<br>Riverview, FL 33579</div>
+            <div class="cta-row">
+              <a class="btn btn-outline-ink" style="padding:9px 16px;font-size:0.85rem;" href="https://www.google.com/maps/search/?api=1&query=14103+Covert+Green+Pl%2C+Riverview%2C+FL+33579" target="_blank" rel="noopener">Get directions</a>
+            </div>
+          </div>
+          <div class="contact-block">
+            <div class="label">Good to know</div>
+            <div class="badges">
+              <span class="badge">LGBTQ+ friendly</span>
+              <span class="badge">Wheelchair-accessible parking</span>
+              <span class="badge">Free parking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>John Irrigation Repair · Riverview, FL</span>
+    <a href="tel:+17737170821">(773) 717-0821</a>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion) {
+    revealEls.forEach(el => el.classList.add('in-view'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => io.observe(el));
+  }
+
+  // Diagnostic scanner
+  const scenarios = [
+    {
+      node: 0,
+      title: "Wrong zone kept firing",
+      detail: "Two valve wires were crossed inside the controller, so the timer watered the wrong section every cycle.",
+      fix: "Isolated the wiring by testing one valve at a time, then corrected the connection at the controller.",
+      time: "Solved same visit"
+    },
+    {
+      node: 1,
+      title: "Pressure was low, system-wide",
+      detail: "No puddle, no visible break — just weak coverage everywhere, the kind of leak that only shows up on the water bill.",
+      fix: "Traced a slow mainline leak, repaired the pipe, then purged and rebalanced every head.",
+      time: "Found in under 5 minutes"
+    },
+    {
+      node: 2,
+      title: "The controller looked fine. The valve wasn't.",
+      detail: "The timer was firing right on schedule, but a stuck valve kept one entire zone from ever turning on.",
+      fix: "Replaced the valve and two worn heads on the same line while it was open.",
+      time: "Solved same visit"
+    },
+    {
+      node: 3,
+      title: "A head went quiet months ago",
+      detail: "It wasn't broken on the surface — it was buried, and the pipe underneath had been cut clean through.",
+      fix: "Dug down to the head, spliced the cut line, and restored full pressure to the zone.",
+      time: "Solved same visit"
+    },
+    {
+      node: 4,
+      title: "Tree roots seized a sprinkler body",
+      detail: "Roots had grown completely around the housing over several seasons, cracking it from the outside in.",
+      fix: "Freed the body without cutting the roots, swapped the housing, and tested for full flow.",
+      time: "Solved same visit"
+    }
+  ];
+
+  let current = -1;
+  const btn = document.getElementById('diagBtn');
+  const beam = document.getElementById('scanBeam');
+  const resultCard = document.getElementById('diagResult');
+  const nodes = document.querySelectorAll('.node');
+
+  function runDiagnostic(){
+    btn.disabled = true;
+    btn.textContent = 'Scanning…';
+    resultCard.classList.remove('show');
+    nodes.forEach(n => n.classList.remove('active'));
+
+    beam.classList.remove('active');
+    void beam.offsetWidth; // force reflow so the animation restarts
+    beam.classList.add('active');
+
+    current = (current + 1) % scenarios.length;
+    const scenario = scenarios[current];
+    const duration = reduceMotion ? 60 : 1450;
+
+    setTimeout(() => {
+      const activeNode = document.querySelector('.node[data-i="' + scenario.node + '"]');
+      if (activeNode) activeNode.classList.add('active');
+
+      resultCard.querySelector('.diag-title').textContent = scenario.title;
+      resultCard.querySelector('.diag-detail').textContent = scenario.detail;
+      resultCard.querySelector('.diag-fix').textContent = scenario.fix;
+      resultCard.querySelector('.diag-time').textContent = scenario.time;
+      resultCard.classList.add('show');
+
+      btn.disabled = false;
+      btn.textContent = 'Run diagnostic again';
+    }, duration);
+  }
+
+  btn.addEventListener('click', runDiagnostic);
+</script>
+
+</body>
+</html>
